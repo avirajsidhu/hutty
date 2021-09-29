@@ -44,7 +44,6 @@
     "lint:fix": "yarn run eslint --fix src",
     "lint:css": "stylelint src/**/*.css",
     "generate": "cross-env TS_NODE_PROJECT='./internals/ts-node.tsconfig.json' plop --plopfile internals/generators/plopfile.ts",
-    "cleanAndSetup": "ts-node --project=./internals/ts-node.tsconfig.json ./internals/scripts/clean.ts",
     "prettify": "prettier --write",
     "extract-messages": "i18next-scanner --config=internals/extractMessages/i18next-scanner.config.js",
     "// ---TESTING TEMPLATE---": "",
@@ -91,6 +90,9 @@
     }
   },
   "dependencies": {
+    "@fontsource/roboto": "4.5.0",
+    "@material-ui/core": "4.12.3",
+    "@material-ui/icons": "4.11.2",
     "@reduxjs/toolkit": "1.6.0",
     "fontfaceobserver": "2.1.0",
     "i18next": "20.3.2",
